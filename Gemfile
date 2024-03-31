@@ -77,3 +77,5 @@ end
 gem "device", "~> 0.0.0"
 
 gem "devise", "~> 4.9"
+
+gem "font-awesome-sass", "~> 6.5.1"
