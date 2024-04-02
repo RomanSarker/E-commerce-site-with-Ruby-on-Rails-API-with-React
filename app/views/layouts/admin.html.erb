@@ -13,6 +13,30 @@
 
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
+
+     <nav>
+     <nav class="flex w-full">
+     <div class="w-64 p-4 h-screen bg-gray-600 stocky top-0">
+    <div class="flex">
+  <%= image_tag "logo.png", class: 'w-16' %>
+  <h1 class="text-md py-2 text-gray-50 font-bold hidden md:block">
+  Ecom Admin
+  </h1>
+     </div>
+     <ul class="flex flex-col text-gray-50">
+     <li>
+     <%= link_to admin_path class: "block px-4 py-2 hover-rounded hover:bg-gray-700" do %>
+     <%= icon('fa-solid', 'gauge-high') %> <span class="hidden md:inline-block">Dashboard</span>
+
+     <% end %>
+     <a href="/admin/dashboard" class="text-gray-50 hover:text-gray-100">
+     Dashboard
+     </a>
+     </li>
+     <ul>
+     </div>
+     </nav>
+
       <%= yield %>
     </main>
   </body>
